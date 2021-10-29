@@ -1,3 +1,20 @@
+/*Sua empresa o contratou para desenvolver uma agenda
+para uma pessoa solitária que tem apenas o telefone da
+mãe e um amigo.
+
+Esta agenda deve ter capacidade para armazenar o
+nome, telefone, celular, endereço e aniversário.
+
+A agenda deve ser capaz de inserir os dados de todos os
+contatos (máx 3: A mãe, o amigo e ele mesmo)
+
+Após a inserção de todos os contatos deve perguntar ao
+usuário o número do contato que ele quer visualizar,
+caso o número esteja fora do intervalo (1 a 3), o
+programa termina, caso contrário o programa escreve
+na tela os dados e pergunta novamente.
+
+Este programa nao precisa ter funções além da principal*/
 #include<stdio.h>
 #include <string.h>
 
@@ -11,28 +28,6 @@
 		char aniversario[20];
 	} agenda;
 int main() {
-/*
-	agenda fam[3];
-	printf("\n------Caddastro de contato--------\n\n");
-	
-	printf("Nome contato: ");
-	gets(contato.nome, 50, stdin);
-	printf("Telefone: ");
-	scanf("%d", &contato.telefone);
-	printf("Celular: ");
-	scanf("%d", &contato.celular);
-	printf("Endereco: \n");
-	gets(contato.endereco, 50, stdin);
-	printf("Aniversario: ");
-	gets(contato.aniversario, 20, stdin);
-	
-	printf("\n\n-----Dados contato-------\n\n");
-	printf("Nome...........: %s", contato.nome);
-	printf("Telefone.......: %d", contato.telefone);
-	printf("Celular........: %d", contato.celular);
-	printf("Endereco.......: %s", contato.endereco);
-	printf("Aniversario....: %s", contato.aniversario);
-*/
 int i = 0;
 int j;
 agenda fam[MAX];
@@ -74,40 +69,6 @@ agenda fam[MAX];
 		
 	} while(j > 0 && j < MAX+1);
 	
-	
-
-/*typedef struct{
-
-int idade;
-
-char nome[50];
-
-} pessoa;
-
-main(){
-
-int i;
-
-pessoa fam[3];
-
-strcpy(fam[0].nome,"pai");
-
-fam[0].idade=40;
-
-strcpy(fam[1].nome,"mae");
-
-fam[1].idade=39;
-
-strcpy(fam[2].nome,"filho");
-
-fam[2].idade=15;
-
-for(i=0;i<3;i++){
-
-	printf("%s\t%d",
-	fam[i].nome,
-	fam[i].idade);
-	}*/
 return 0;
 }
 
